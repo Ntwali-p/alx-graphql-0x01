@@ -34,31 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Rick and Morty GraphQL App
+# Rick and Morty Episodes — GraphQL App
 
-This project is a Next.js application configured with TypeScript, Tailwind CSS, ESLint, and Apollo Client to consume the Rick and Morty GraphQL API.
+This project queries the Rick and Morty GraphQL API and displays a paginated list of episodes using Apollo Client in a Next.js application.
 
-## Objective
-Set up Apollo Client and integrate it into a Next.js application to enable GraphQL queries across the app.
-
-## Technologies Used
-- Next.js
-- TypeScript
-- Apollo Client
-- GraphQL
-- Tailwind CSS
-- ESLint
-
-## GraphQL Setup
-Apollo Client is configured in `graphql/apolloClient.ts` and provided globally using `ApolloProvider` in `_app.tsx`.
+## Features
+- GraphQL data fetching with Apollo Client
+- Pagination using GraphQL variables
+- Reusable EpisodeCard component
+- Type-safe data handling with TypeScript
+- Tailwind CSS styling
 
 ## API Endpoint
 https://rickandmortyapi.com/graphql
-
-## Available Queries
-- GET_EPISODES: Fetches paginated episodes with optional filters.
 
 ## How to Run
 ```bash
 npm install
 npm run dev
+
